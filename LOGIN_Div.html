@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Div</title>
+
+        <style>
+            body{
+                font-family: 'Times New Roman';
+            }
+            .contenedor_formulario{
+                background-color: white;
+                margin: 5%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .contenedor_usuario{
+                background-color: white;
+                width: 100%;
+                margin: 5%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .contenedor_footer{
+                background-color: rgb(80, 4, 116);
+                color: azure;
+                width:98%;
+                height: 98%;
+                margin: 1%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .contenedor_principal{
+                font-family: 'Arial';
+                font-style: normal;
+                font-size: 17px;
+                background-color: rgb(230, 233, 240);
+                background-image: url("Fondo.jpg");
+                background-size: cover;
+                width:98%;
+                height: 98%;
+                margin: 1%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .contenedor_cabecera{
+                font-family:'Times New Roman';
+                font-style: normal;
+                font-size: 20px;
+                color: aliceblue;
+                background-color: rgb(80, 4, 116);
+                width:98%;
+                height: 98%;
+                margin: 1%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        </style>
+    </head>
+    <header>
+        <table class="contenedor_cabecera">
+            <tr>
+                <td>
+                    Acceso y control inteligente
+                </td>
+            </tr>
+            
+        </table>
+    </header>
+    <body>
+        <section>
+            <table class="contenedor_principal">
+                <tr>
+                    <td width="33.33%">
+
+                    </td>
+                    <td width="33.33%">
+                        <div class="contenedor_formulario">
+                            <h1>Iniciar sesión</h1><br>
+                            <img src="user.png" width="320" height="250">
+                            
+                            <form name="Login", action="#", method="post">
+                                <div class="contenedor_usuario">
+                                    Usuario*:
+                                    <input type ="text", name="usuario", maxlength="8", required>
+                                </div>
+                                <div>
+                                    Contraseña*:
+                                    <input type ="password", name="contraseña", maxlength="8", required><br><br>
+                                </div>
+                                <div class="contenedor_formulario">
+                                    <input type="submit" value="Entrar">
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </td>
+                    <td width="33.33%">
+                        
+                    </td>
+                </tr>
+            </table>
+            
+        </section>
+    </body>
+    <footer>
+        <table class="contenedor_footer">
+            <tr>
+                <td>
+                    <p>Derechos de autor CYSMAG.MX 2023</p>
+                </td>
+            </tr>
+        </table>
+        
+</footer>  
+</html>
